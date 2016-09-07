@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int res, a;
+    cout<<"Vvedit a\n";
+    cin>>a;
+    cout<<"Vvedit 1, jakscho hochete pidnesty a do kvadratu;\n 2 - jakscho hochete pidnesty a do kubu;\n 3 - do chetvertogo stepenja\n ";
+    cin>>res;
+	switch (res)
+    {
+    	case 1: 
+		{
+		res=pow(a,2); 
+		break;	
+		}
+    	case 2: 
+		{
+		res=pow(a,3); 
+		break;
+		}
+    	case 3: 
+		{
+		res=pow(a,4); 
+		break;
+		}
+    	default: 
+		{
+		cout<<"Vvedit 1, 2 abo 3";
+    	}
+    }
+    cout<<"resultat= "<<res;
+    cin.get();
+    cin.get();
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int res, a;
+    cout<<"Vvedit a\n";
+    cin>>a;
+    res= (a>=0)?a:(-a);
+    cout<<"Absolutne znachennja = "<<res;
+    cin.get();
+    cin.get();
+    return 0;
+}

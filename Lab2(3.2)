@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int res, b1, q, i;
+    cout<<"Vvedit b1 ta q\n";
+    cin>>b1;
+    cin>>q;
+    for(i=1,res=1;res<=100;i++)
+    {
+    	cout<<"\nb"<<i<<" = ";
+    	res=b1*pow(q,i-1);
+    	cout<<res;
+    }
+   
+    cin.get();
+    cin.get();
+    return 0;
+}

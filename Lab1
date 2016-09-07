@@ -1,0 +1,43 @@
+# Labs-Proga-C-
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c, min, max;
+    cout << "Vvedit a\n";
+    cin >> a;
+    cout << "Vvedit b\n";
+    cin >> b;
+    cout << "Vvedit c\n";
+    cin >> c;
+    if (a == b && a == c)
+    {
+        cout << "Chisla rivni";
+        cin.get();
+        cin.get();
+        //return 0;
+    }
+    else if ((a % 2 == 0) || (b % 2 == 0) || (c % 2 == 0))
+    {
+        if (a > b&&a > c) max = a;
+        else if (b > c) max = b;
+        else max = c;
+        cout << "max= " << max;
+        cin.get();
+        cin.get();
+        //return 0;
+    }
+    
+    
+    else 
+    {
+        if (a < b&&a < c) min = a;
+        else if (b < c) min = b; 
+        else min = c;
+        cout << "min= " << min;
+    }
+    cin.get();
+    cin.get();
+    return 0;
+}
